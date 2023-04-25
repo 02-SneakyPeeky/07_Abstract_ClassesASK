@@ -1,5 +1,20 @@
 package com.cc.java;
 
-public class Triangle {
+public class Triangle extends Shape {
     
+    private double baseline, height;
+
+    public Triangle(double baseline, double height) {
+        this.baseline = baseline;
+        this.height = height;
+    }
+
+    @Override
+    public double area() {
+        // TODO Auto-generated method stub
+        return baseline * 2 / height;
+    } 
+ 
+
+
 }
